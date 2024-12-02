@@ -1,0 +1,56 @@
+read first---
+
+
+sri indu@DESKTOP-TNB5L58 MINGW64 ~/Desktop/Hash
+$ git init
+Initialized empty Git repository in C:/Users/sri indu/Desktop/Hash/.git/
+
+sri indu@DESKTOP-TNB5L58 MINGW64 ~/Desktop/Hash (master)
+$ git add .
+warning: in the working copy of 'Hymns-main/Mp3.html', LF will be replaced by CRLF the next time
+ Git touches it
+
+sri indu@DESKTOP-TNB5L58 MINGW64 ~/Desktop/Hash (master)
+$ git commit
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'sri indu@DESKTOP-TNB5L58.(none)')
+
+sri indu@DESKTOP-TNB5L58 MINGW64 ~/Desktop/Hash (master)
+$ ^C
+
+sri indu@DESKTOP-TNB5L58 MINGW64 ~/Desktop/Hash (master)
+$  git config --global user.email "ajayvincentbonagiri@gmail.com"
+
+sri indu@DESKTOP-TNB5L58 MINGW64 ~/Desktop/Hash (master)
+$ git remote -v
+
+sri indu@DESKTOP-TNB5L58 MINGW64 ~/Desktop/Hash (master)
+$ git remote add origin git@github.com:AjayVincent/Hymns.git
+
+sri indu@DESKTOP-TNB5L58 MINGW64 ~/Desktop/Hash (master)
+$ git remote -v
+origin  git@github.com:AjayVincent/Hymns.git (fetch)
+origin  git@github.com:AjayVincent/Hymns.git (push)
+
+sri indu@DESKTOP-TNB5L58 MINGW64 ~/Desktop/Hash (master)
+$ git push -uf origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'github.com:AjayVincent/Hymns.git'
+
+sri indu@DESKTOP-TNB5L58 MINGW64 ~/Desktop/Hash (master)
+$ git remote add origin https://github.com/AjayVincent/Hymns.git
+error: remote origin already exists.
+
+sri indu@DESKTOP-TNB5L58 MINGW64 ~/Desktop/Hash (master)
+$
